@@ -1,22 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
-    background-color: #d3d3d3;
-    height: 100%;
-    width: 100%;
+    font-family: 'https://fonts.google.com/specimen/Outfit';
+    background-color: 	#d6e2f0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    width: 1440px;
+}
+@media(max-width: 375px) {
+    body {
+        background-color: #d3d3d3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 375px;
+    }
 }
 .main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     border-radius: 5px;
     background-color: #fff;
-    height: 50%;
-    width: 30%;
+    width: 200px;
+    height: 320px;
+    padding: 10px;
+}
+img {
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+}
+#title {
+    font-size: 15px;
+    font-weight: 700; 
+}
+#content{
+    font-size: 15px;
+    font-weight: 400; 
+    color: #aaa1a1
 }
 .attribution { 
+    display: block;
     font-size: 11px;
     text-align: center; 
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%); 
+    font-size: 20px;
 }
